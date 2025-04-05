@@ -67,14 +67,35 @@
 //     }
 //     cout<<add;
 // }
-# include<iostream>
+// # include<iostream>
+// using namespace std;
+// int main(){
+//     int n,fact= 1;
+//     cout<<"enter a number";
+//     cin>>n;
+//     for(int i = 1; i<=n; i++){
+//         fact= fact*i;
+//     }
+//     cout<<fact;
+// }
+# include <iostream>
 using namespace std;
 int main(){
-    int n,fact= 1;
-    cout<<"enter a number";
-    cin>>n;
-    for(int i = 1; i<=n; i++){
-        fact= fact*i;
+    int num, digit, temp,sum = 0;
+    cout<<"enter the number";
+    cin>>num;
+    temp = num;
+    while(num>0){
+        digit = num% 10;
+        sum = sum + digit * digit* digit;
+        num = num/10;
+
     }
-    cout<<fact;
+
+    if(temp==sum){
+        cout<<"armstrong";
+    }
+    else{
+        cout<<"not armstrong";
+    }
 }
