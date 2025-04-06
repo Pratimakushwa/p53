@@ -119,14 +119,26 @@
 //     }
 // }
 
+// # include<iostream>
+// using namespace std;
+// int main(){
+//     int num , fact = 1; 
+//     cout<<"enter the number";
+//     cin>>num;
+//     for(int i = 1 ; i<=num; i++){
+//      fact = fact*i;
+//     }
+//     cout<<fact;
+// }
+
 # include<iostream>
 using namespace std;
 int main(){
-    int num , fact = 1; 
-    cout<<"enter the number";
+    int num , add= 0;
+    cout<<"enter your number";
     cin>>num;
-    for(int i = 1 ; i<=num; i++){
-     fact = fact*i;
+    for (int i= 1; i<=num;i++){
+        add = add+i;
     }
-    cout<<fact;
+    cout<<add;
 }
