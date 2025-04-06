@@ -78,24 +78,55 @@
 //     }
 //     cout<<fact;
 // }
-# include <iostream>
+// # include <iostream>
+// using namespace std;
+// int main(){
+//     int num, digit, temp,sum = 0;
+//     cout<<"enter the number";
+//     cin>>num;
+//     temp = num;
+//     while(num>0){
+//         digit = num% 10;
+//         sum = sum + digit * digit* digit;
+//         num = num/10;
+
+//     }
+
+//     if(temp==sum){
+//         cout<<"armstrong";
+//     }
+//     else{
+//         cout<<"not armstrong";
+//     }
+// }
+// # include <iostream>
+// using namespace std;
+// int main(){
+//     int num ,temp,digit,reverse = 0;
+//     cout<<"enter the number:";
+//     cin>>num;
+//     temp = num;
+//     while(num>0){
+//         digit = num%10;
+//         reverse =  reverse +digit*digit*digit;
+//         num = num/10;
+//     }
+//     if(temp==reverse){
+//         cout<<"Armstrong";
+//     }
+//     else{
+//         cout<<"not armstrong";
+//     }
+// }
+
+# include<iostream>
 using namespace std;
 int main(){
-    int num, digit, temp,sum = 0;
+    int num , fact = 1; 
     cout<<"enter the number";
     cin>>num;
-    temp = num;
-    while(num>0){
-        digit = num% 10;
-        sum = sum + digit * digit* digit;
-        num = num/10;
-
+    for(int i = 1 ; i<=num; i++){
+     fact = fact*i;
     }
-
-    if(temp==sum){
-        cout<<"armstrong";
-    }
-    else{
-        cout<<"not armstrong";
-    }
+    cout<<fact;
 }
