@@ -131,14 +131,39 @@
 //     cout<<fact;
 // }
 
-# include<iostream>
+// # include<iostream>
+// using namespace std;
+// int main(){
+//     int num,digit, max=0;
+//     cout<<"enter the number";
+//     cin>>num;
+//     while(num>0){
+//         digit = num%10;
+        
+//         if (digit>max){
+//             max = digit;
+            
+//             }
+//         num = num/10;
+            
+//      }
+//     cout<<max;
+        
+// } 
+     
+
+
+#include<iostream>
 using namespace std;
-int main(){
-    int num , add= 0;
-    cout<<"enter your number";
+int main (){
+    int num,digit, count = 0;
+    cout<<"enter the number";
     cin>>num;
-    for (int i= 1; i<=num;i++){
-        add = add+i;
+    while(num>0){
+        
+         num= num/10;
+        count++;
     }
-    cout<<add;
+    cout<<count;
+
 }
