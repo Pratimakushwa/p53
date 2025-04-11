@@ -86,7 +86,7 @@ int main (){
             }
             else{
                 cout<<"invalid";
-            }
+                                                                                                                                                 }
 
         }
         else if(num>=70000){
