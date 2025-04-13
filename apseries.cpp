@@ -80,17 +80,110 @@
 //     }
 //     cout<<lcm;
 // }
-#include<iostream>
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int num ,first ,last , temp;
+//     cout<<"enter the number ";
+//     cin>>num;
+//     temp = num;
+//     last = num %10;
+//     while(temp>=10){
+//         temp =temp/10;
+//         first = temp;
+//     }
+//     cout<<first+last;
+// }
+
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   int num , digit;
+//   cout<<"enter a number";
+//   cin>>num;
+//   while(num>0){
+//     digit = num%10;
+//     cout<<digit;
+//     num = num/10;
+    
+//   }
+  
+
+// # include<iostream>
+// using namespace std;
+// int main (){
+//   int num , digit , sum =  1;
+//   cout<<"enter the number";
+//   cin>>num;
+//   while(num>0){
+
+//     digit = num%10;
+//     sum = sum * digit;
+//     num = num/10;
+  
+
+//   }
+//   cout<<sum;
+// }
+
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   int num,digit ,reverse =0;
+//   cout<<"enter the number";
+//   cin>>num;
+//   while(num>0){
+//     digit = num%10;
+//   reverse= reverse*10 + digit;
+//   num = num/10;
+  
+
+//   }
+// cout<<reverse;
+ 
+// }
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   int num, add=0;
+//   cout<<"enter the number ";
+//   cin>>num;
+//   for(int i= 1 ; i<=num; i++){
+//     add = add+i;
+//   }
+//   cout<<add;
+// }
+// #include<iostream>
+// using namespace std;
+// int main(){
+//   int  num, fact= 1;
+//   cout<<"enter a number";
+//   cin>>num ;
+//   for(int i = 1; i<=num;i++){
+//     fact= fact *i;
+
+//   }
+//   cout<<fact;
+
+// }
+
+# include<iostream>
 using namespace std;
 int main(){
-    int num ,first ,last , temp;
-    cout<<"enter the number ";
-    cin>>num;
-    temp = num;
-    last = num %10;
-    while(temp>=10){
-        temp =temp/10;
-        first = temp;
+  int num, digit, temp,reverse  = 0 ;
+  cout<<"enter the number";
+  cin>> num;
+  temp = num;
+  while(num>0){
+    digit= num%10;
+    reverse= reverse*10 +digit;
+    num = num/10;
+  }
+    if (temp == reverse){
+      cout<<"palindrom";
     }
-    cout<<first+last;
+    
+  else{
+  cout<<"not a palindrom";
+}
 }
