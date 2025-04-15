@@ -153,17 +153,69 @@
      
 
 
-#include<iostream>
-using namespace std;
-int main (){
-    int num,digit, count = 0;
-    cout<<"enter the number";
-    cin>>num;
-    while(num>0){
+// #include<iostream>
+// using namespace std;
+// int main (){
+//     int num,digit, count = 0;
+//     cout<<"enter the number";
+//     cin>>num;
+//     while(num>0){
         
-         num= num/10;
-        count++;
-    }
-    cout<<count;
+//          num= num/10;
+//         count++;
+//     }
+//     cout<<count;
 
+// }
+
+
+// # include<iostream>
+// using namespace std;
+// int main(){
+//     int num;
+//     cout<<"enter the number";
+//     cin>>num;
+//     for(int i = 1; i<=num; i++){
+//         if(num%i==0){
+//             cout<<i<<" ";
+//         }
+//     }
+// }
+
+// #include<iostream>
+// using namespace std;
+// int main(){
+//     int num, first= 0, second=1 , next;
+//     cout<<"enter the number";
+//     cin>>num;
+//     for(int i = 1; i<=num; i++){
+//         if (i==1){
+//             cout<<first<<" ";
+//             continue;
+//         }
+//         if(i==2){
+//             cout<<second<<" ";
+//             continue;
+//         }
+//    next = first+second;
+//    first = second;
+//    second = next;
+//    cout<<next<<" ";
+//     }
+    
+// }
+
+# include<iostream>
+using namespace std;
+int main(){
+int num;
+cout<<"enter the number";
+cin>>num;
+for(int i = 2; i<num;i++){
+    if(num%i==0){
+        cout<<"not a prime";
+        return 0;
+    }
+}
+cout<<"prime";
 }

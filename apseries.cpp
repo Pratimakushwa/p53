@@ -80,20 +80,24 @@
 //     }
 //     cout<<lcm;
 // }
-// #include<iostream>
-// using namespace std;
-// int main(){
-//     int num ,first ,last , temp;
-//     cout<<"enter the number ";
-//     cin>>num;
-//     temp = num;
-//     last = num %10;
-//     while(temp>=10){
-//         temp =temp/10;
-//         first = temp;
-//     }
-//     cout<<first+last;
-// }
+#include<iostream>
+using namespace std;
+int main(){
+    int num ,first ,last , temp;
+    cout<<"enter the number ";
+    cin>>num;
+    if(num<10){
+      cout<<"Invalid input";
+      return 0;
+    }
+    temp = num;
+    last = temp %10;
+    while(temp>=10){
+        temp =temp/10;
+        first = temp;
+    }
+    cout<<first+last;
+}
 
 // # include<iostream>
 // using namespace std;
@@ -167,23 +171,123 @@
 
 // }
 
-# include<iostream>
-using namespace std;
-int main(){
-  int num, digit, temp,reverse  = 0 ;
-  cout<<"enter the number";
-  cin>> num;
-  temp = num;
-  while(num>0){
-    digit= num%10;
-    reverse= reverse*10 +digit;
-    num = num/10;
-  }
-    if (temp == reverse){
-      cout<<"palindrom";
-    }
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   int num, digit, temp,reverse  = 0 ;
+//   cout<<"enter the number";
+//   cin>> num;
+//   temp = num;
+//   while(num>0){
+//     digit= num%10;
+//     reverse= reverse*10 +digit;
+//     num = num/10;
+//   }
+//     if (temp == reverse){
+//       cout<<"palindrom";
+//     }
     
-  else{
-  cout<<"not a palindrom";
-}
-}
+//   else{
+//   cout<<"not a palindrom";
+// }
+// }
+
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   for(int r=1; r<=5; r++){
+//     for(int c= 1; c<=5; c++){
+//       if(c>=6-r){
+//         cout<<"*";
+
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//     cout<<endl;
+//   }
+// }
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   for(int r=1; r<=5; r++){
+//     for(int c= 1; c<=5; c++){
+//       if(c<=6-r){
+//         cout<<"*";
+
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//     cout<<endl;
+//   }
+// }
+
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   for(int r=1; r<=5; r++){
+//     for(int c= 1; c<=5; c++){
+//       if(c>=r){
+//         cout<<r;
+
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//     cout<<endl;
+//   }
+// }
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   for(int r=1; r<=5; r++){
+//     for(int c= 1; c<=5; c++){
+//       if(c>=r){
+//         cout<<c;
+
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//     cout<<endl;
+//   }
+// }
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   for(int r=1; r<=5; r++){
+//     for(int c= 1; c<=5; c++){
+//       if(c<=r){
+//         cout<< char(c+64);
+
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//     cout<<endl;
+//   }
+// }
+// // /}
+
+// # include<iostream>
+// using namespace std;
+// int main(){
+//   for(int r=1; r<=5; r++){
+//     for(int c= 1; c<=5; c++){
+//       if(c>=6-r){
+//         cout<<r;
+
+//       }
+//       else{
+//         cout<<" ";
+//       }
+//     }
+//     cout<<endl;
+//   }
+// }
